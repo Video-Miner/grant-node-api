@@ -46,5 +46,5 @@
     "pino-pretty": "^3.5.0",
     "supertest": "^4.0.2"
   },
-  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
+  "author": "Nico Vergauwen <nico@livepool.io> (https://github.com/kyriediculous)"
 }
