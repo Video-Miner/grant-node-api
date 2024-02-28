@@ -1,6 +1,6 @@
-# livepool-api
+# open-pool-api
 
-Livepool API
+Grant Node Pool API
 
 ## Get Started
 
@@ -10,11 +10,8 @@ Get started developing...
 # install deps
 npm install
 
-# run in development mode
-npm run dev
-
-# run tests
-npm run test
+# run 
+npm run start
 ```
 
 ## Install Dependencies
@@ -26,25 +23,7 @@ npm install
 ```
 
 ## Run It
-#### Run in *development* mode:
-Runs the application is development mode. Should not be used in production
-
 ```shell
-npm run dev
-```
-
-or debug it
-
-```shell
-npm run dev:debug
-```
-
-#### Run in *production* mode:
-
-Compiles the application and starts it in production production mode.
-
-```shell
-npm run compile
 npm start
 ```
 
@@ -55,58 +34,19 @@ Run the Mocha unit tests
 ```shell
 npm test
 ```
-
-or debug them
-
-```shell
-npm run test:debug
-```
-
 ## Try It
-* Open you're browser to [http://localhost:3000](http://localhost:3000)
-* Invoke the `/examples` endpoint 
+* Invoke the `/api/v1/transcoders` endpoint 
   ```shell
-  curl http://localhost:3000/api/v1/examples
+  curl http://localhost:3000/api/v1/transcoders
   ```
-
-
-## Debug It
-
-#### Debug the server:
-
-```
-npm run dev:debug
-```
-
-#### Debug Tests
-
-```
-npm run test:debug
-```
-
-#### Debug with VSCode
-
-Add these [contents](https://github.com/cdimascio/generator-express-no-stress/blob/next/assets/.vscode/launch.json) to your `.vscode/launch.json` file
-## Lint It
-
-View prettier linter output
-
-```
-npm run lint
-```
-
-Fix all prettier linter errors
-
-```
-npm run lint
-```
-
-## Deploy It
-
-Deploy to CloudFoundry
+* Invoke the `/api/v1/status` endpoint 
+  ```shell
+  curl http://localhost:3000/api/v1/status
+  ```
+## Build Docker Image
 
 ```shell
-cf push livepool-api
+docker build -t open-pool-api:0.7.1 .
 ```
 
 
